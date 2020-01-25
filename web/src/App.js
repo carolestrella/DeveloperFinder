@@ -41,7 +41,7 @@ function App() {
       <main>
       <ul> 
       {devs.map(dev => ( //codigo javascript - começa com {}
-        <DevItem dev = {dev}/>
+        <DevItem key={dev._id} dev = {dev}/>
       ))}
 
       </ul>

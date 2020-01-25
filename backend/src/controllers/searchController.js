@@ -16,13 +16,13 @@ module.exports = {
                 $near: {
                     $geometry: {
                         type: 'Point',
-                        coordinates: [latitude, longitude],
+                        coordinates: [longitude, latitude],
                     },
                     $maxDistance: 10000,
                 },
             },
         });
 
-        return response.json({devs: [] });
+        return response.json(devs);
     }
 }
